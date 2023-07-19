@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54e1bd7e-ffd2-4648-86d4-fec8cceee978" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/layout/Sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/hello.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/layout/FollowBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/layout/SidebarItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/layout/SidebarLogo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/layout/SidebarTweetButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +62,7 @@
       <updated>1689742360353</updated>
       <workItem from="1689742361467" duration="588000" />
       <workItem from="1689742953504" duration="88000" />
-      <workItem from="1689743049959" duration="999000" />
+      <workItem from="1689743049959" duration="3916000" />
     </task>
     <servers />
   </component>
