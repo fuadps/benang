@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54e1bd7e-ffd2-4648-86d4-fec8cceee978" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/layout/FollowBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/layout/SidebarItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/layout/SidebarLogo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/layout/SidebarTweetButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Modal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/modals/LoginModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/modals/RegisterModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useLoginModal.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useRegisterModal.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/layout/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/Sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layout/SidebarTweetButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout/SidebarTweetButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,17 +47,23 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.laravel-idea.search-composer-json": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/fuad/Webapps/benang",
+    "last_opened_file_path": "/Users/fuad/Webapps/benang/components/modals",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.HTML",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Users/fuad/Webapps/benang/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/modals" />
+      <recent name="$PROJECT_DIR$/hooks" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,7 +74,7 @@
       <updated>1689742360353</updated>
       <workItem from="1689742361467" duration="588000" />
       <workItem from="1689742953504" duration="88000" />
-      <workItem from="1689743049959" duration="3916000" />
+      <workItem from="1689743049959" duration="9865000" />
     </task>
     <servers />
   </component>
