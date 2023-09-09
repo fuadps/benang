@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54e1bd7e-ffd2-4648-86d4-fec8cceee978" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/libs/serverAuth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/current.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/register.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/fetcher.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/modals/RegisterModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/modals/RegisterModal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/register.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/register.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +63,9 @@
       <recent name="$PROJECT_DIR$/components/modals" />
       <recent name="$PROJECT_DIR$/hooks" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/api" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -71,7 +78,7 @@
       <workItem from="1689742361467" duration="588000" />
       <workItem from="1689742953504" duration="88000" />
       <workItem from="1689743049959" duration="16294000" />
-      <workItem from="1694260534069" duration="1100000" />
+      <workItem from="1694260534069" duration="4182000" />
     </task>
     <servers />
   </component>
