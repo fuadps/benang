@@ -3,6 +3,7 @@ import useCurrentUser from "@/hooks/useCurrentUser";
 import { format } from 'date-fns'
 import {useMemo} from "react";
 import Button from "@/components/Button";
+import useEditModal from "@/hooks/useEditModal";
 
 interface UserBioProps {
     userId: string,
@@ -11,6 +12,8 @@ interface UserBioProps {
 const UserBio: React.FC<UserBioProps> = ({userId}) => {
     const {data: currentUser} = useCurrentUser()
     const {data: fetchedUser} = useUsers(userId)
+
+    const editModal = useEditModal()
 
     const createdAt = useMemo(() => {
         if(!fetchedUser?.createdAt)
@@ -26,7 +29,7 @@ const UserBio: React.FC<UserBioProps> = ({userId}) => {
                     <Button
                         secondary
                         label="Edit"
-                        onClick={() => {}}
+                        onClick={editModal.onOpen}
                     />
                 ) : (
                     <Button
