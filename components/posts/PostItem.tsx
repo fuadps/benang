@@ -4,7 +4,9 @@ import useCurrentUser from "@/hooks/useCurrentUser";
 import {useCallback, useMemo} from "react";
 import {formatDistanceToNowStrict} from "date-fns";
 import Avatar from "@/components/Avatar";
-import {AiOutlineHeart, AiOutlineMessage} from "react-icons/ai";
+import {AiOutlineHeart, AiFillHeart, AiOutlineMessage} from "react-icons/ai";
+import useLike from "@/hooks/useLike";
+import postId from "@/pages/posts/[postId]";
 
 interface PostItemProps {
     userId?: string
@@ -15,7 +17,8 @@ const PostItem: React.FC<PostItemProps> =  ({userId, data}) => {
     const router = useRouter()
     const loginModal = useLoginModal()
 
-    const { data: currentUser } = useCurrentUser()
+    const { data: currentUser } = useCurrentUser();
+    const { hasLiked, toggleLike } = useLike({ postId: data.id, userId});
 
     const goToUser = useCallback(async (event: any) => {
         event.stopPropagation()
@@ -26,14 +29,17 @@ const PostItem: React.FC<PostItemProps> =  ({userId, data}) => {
     const goToPost = useCallback( (event: any) => {
         event.stopPropagation()
 
-        router.push(`posts/${data.id}`)
+        router.push(`/posts/${data.id}`)
     }, [data.id, router])
 
     const onLike = useCallback(async (event: any) => {
         event.stopPropagation()
 
-        loginModal.onOpen()
-    }, [loginModal])
+        if(!currentUser)
+            return loginModal.onOpen()
+
+        await toggleLike()
+    }, [currentUser, loginModal, toggleLike])
 
     const createdAt = useMemo(() => {
         if(!data?.createdAt)
@@ -41,6 +47,8 @@ const PostItem: React.FC<PostItemProps> =  ({userId, data}) => {
 
         return formatDistanceToNowStrict(new Date(data.createdAt))
     }, [data?.createdAt])
+
+    const LikeIcon = hasLiked ? AiFillHeart : AiOutlineHeart
 
     return (
         <div
@@ -68,9 +76,9 @@ const PostItem: React.FC<PostItemProps> =  ({userId, data}) => {
                         </div>
 
                         <div onClick={onLike} className="flex flex-row items-center text-neutral-500 gap-2 cursor-pointer transition hover:text-red-500">
-                            <AiOutlineHeart size="20" />
+                            <LikeIcon size="20" />
                             <p>
-                                {data.comments?.length || 0}
+                                {data.likeIds.length}
                             </p>
                         </div>
                     </div>
