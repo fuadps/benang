@@ -33,7 +33,10 @@ const Sidebar = () => {
         <div className="col-span-1 h-full pr-4 md:pr-6">
             <div className="flex flex-col items-end">
                 <div className="space-y-2 lg:w-[230px]">
-                    <SidebarLogo />
+                    <div className="flex flex-row  items-center">
+                        <SidebarLogo />
+                        <div className="hidden md:block text-transparent font-semibold text-2xl bg-clip-text bg-gradient-to-r from-orange-300 to-orange-600">Benang.</div>
+                    </div>
                     {items.map((item) => (
                         <SidebarItem
                             key={item.href}

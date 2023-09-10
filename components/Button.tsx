@@ -20,9 +20,9 @@ const Button: React.FC<ButtonProps> = ({label, secondary, fullWidth, large, onCl
                 transition 
                 border-2 
                 ${fullWidth ? 'w-full' : 'w-fit'} 
-                ${secondary ? 'bg-white' : 'bg-sky-500'}
+                ${secondary ? 'bg-white' : 'bg-orange-400'}
                 ${secondary ? 'text-black' : 'text-white'}
-                ${secondary ? 'border-black' : 'border-sky-500'}
+                ${secondary ? 'border-black' : 'border-orange-500'}
                 ${large ? 'text-xl' : 'text-md'}
                 ${large ? 'px-5' : 'px-4'}
                 ${large ? 'py-3' : 'py-2'}
