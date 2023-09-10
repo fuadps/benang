@@ -16,12 +16,12 @@ const Sidebar = () => {
             href: '/',
             icon: BsHouseFill,
         },
-        {
-            label: 'Notifications',
-            href: '/notifications',
-            icon: BsBellFill,
-            auth: true,
-        },
+        // {
+        //     label: 'Notifications',
+        //     href: '/notifications',
+        //     icon: BsBellFill,
+        //     auth: true,
+        // },
         {
             label: 'Profile',
             href: currentUser ? `/users/${currentUser.id}` : '',
@@ -47,7 +47,9 @@ const Sidebar = () => {
                         <SidebarItem onClick={() => signOut()} icon={BiLogOut} label="Logout"/>
                     )}
                 </div>
-                <SidebarTweetButton />
+                { !currentUser && (
+                    <SidebarTweetButton />
+                )}
             </div>
         </div>
     )
