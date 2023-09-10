@@ -1,38 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Benang.
+Benang is a X (previously Twitter) clone-like web app using Next.JS. This is a side project that I create for fun to explore React & Next.JS.
 
-## Getting Started
+## Stack Used
+- React.Js
+- Next.Js
+- NextAuth.Js
+- MongoDB
+- Prisma
+- TailwindCSS
 
-First, run the development server:
+## Installation
+1. Copy `.env.example` and save as `.env`
+2. Filled `DATABASE_URL` `NEXTAUTH_JWT_SECRET` and `NEXTAUTH_SECRET` in `.env`
+3. Run `npx prisma db push` to migrate database to MongoDB.
+4. Run `npm install` & `npm run dev` .
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Screenshots
+<img width="1189" alt="image" src="https://github.com/fuadps/benang/assets/22338914/121856f2-c2c9-4fd8-8b2e-7fdbc3e7344e">
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<img width="1189" alt="image" src="https://github.com/fuadps/benang/assets/22338914/54a0120a-c326-4a63-b4a2-5d03ba29ba90">
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<img width="1189" alt="image" src="https://github.com/fuadps/benang/assets/22338914/eacbed19-46ba-4739-9d6e-af73226316db">
